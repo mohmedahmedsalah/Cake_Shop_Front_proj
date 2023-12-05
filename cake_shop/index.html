@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link -->
+    <!--  -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+
+    <!--  -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <script>
+        const toggle = () => {
+            document.getElementById("nav").classList.toggle("navactive");
+          };
+          const toggl = () => {
+            document.getElementById("na").classList.toggle("navactive");
+          };
+    </script>
+    <title>coffe shop website</title>
+</head>
+<body>
+    
+<!-- header section start page -->
+<div class="parent_header" id="eeee">
+    <header>
+      <div class="brand">
+        <i class="fa-solid fa-cake-candles fa-bounce fa-xl" style="color: #a7a8a9;"></i>
+        <h1>Brand</h1>
+      </div>
+      <span class="fas fa-bars" id="mymenuIcon" onclick="toggl()"></span>
+      <div class="mynav" id="na">
+        
+        <!-- <ul>
+          <li>
+            <a class="fa fa-heart" id="myheadIcon"href="#" ></a>
+          </li>
+          <li>
+            <a class="fa fa-shopping-cart" id="myheadIcon" onclick="openOtherHTML()"  ></a>
+          </li>
+          <li>
+            <a class="fa fa-user" id="myheadIcon"href="#" ></a>
+          </li>
+         
+        </ul> -->
+          
+        
+      </div>
+
+
+      <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+
+      <div class="navbar" id="nav">
+        <div class="searchBox">
+          <input type="text" placeholder="Search here..." />
+          <span class="fas fa-search" id="searchIcon"></span>
+        </div>
+        <ul>
+          <li>
+             <span class="fas fa-home" id="headIcon" href="index.html"></span>
+             <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <span class="fa fa-shopping-cart" id="myheadIcon" onclick="openOtherHTML()"  ></span>
+            <a onclick="openOtherHTML()"> Cart </a>
+          </li>
+            <!-- <span class="fas fa-home" id="headIcon"></span>
+            <a href="#"> Home </a> -->
+          
+          <!-- <li>
+            <span class="fa fa-user-circle" id="headIcon"></span>
+            <a href="#"> Profile </a>
+          </li>
+          <li>
+            <span class="fas fa-question-circle" id="headIcon"></span>
+            <a href="#"> Help </a>
+          </li> -->
+          <li>
+            <span class="fas fa-lock" id="headIcon"></span>
+            <a href="reg.html"> Account </a>
+          </li>
+          <li>
+            <span class="fas fa-sign-out" id="headIcon"></span>
+            <a href="#"> Signout </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  
+
+<!--  -->
+<!--  
+    <form class="form">
+    <img class="img"  src="./slider_image/depositphotos_128836176-stock-photo-chocolate-cake-with-marshmallow.jpg" alt="">
+    </form>
+    <form class="buttons_slider">
+    <div class="tt">
+        <button id="la">La</button>
+    
+        <div>
+        <button id="last">Last</button>
+        <button id="next">Next</button>
+        </div>
+        <button id="ne">Ne</button>
+        
+    </div>
+    </form> -->
+    
+    
+ 
+  <div class="container_of_slider">
+    <img src="./slider_image/1.jpg" alt="">
+    <div class="slider-control">
+      <button onclick="showPreviesImage()">&lt;</button>
+      
+      <button id="stop" onclick="stopSlider()" class="btn">Stop</button>
+      <button id="start" onclick="startSlider()" class="btn">Start</button>
+      <button onclick="showNextImage()">&gt;</button>
+    </div>
+  </div>
+    
+
+<!-- home section start -->
+
+<!-- category -->
+<div class="pp_cat">
+<div class="cat">
+<button onclick="view_cakes()" class="dsds">View Cakes</button>
+<button onclick="view_biscuits()"class="dsds">View_Biscuits</button>
+<button onclick="view_cupcakes()"class="dsds">View_Cupcakes</button>
+</div>
+</div>
+
+<!--  -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+<div class="gallery">
+  <div class="content">
+      <img src="./cake/depositphotos_13613299-stock-photo-chocolate-cake.jpg" alt="">
+      <h3>Extra Chocolate Cake</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$180.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(1)"
+       >Buy Now</button>
+  </div>
+
+
+  <div class="content">
+      <img src="./cake/depositphotos_252391082-stock-photo-sweet-chocolate-cake-on-wooden.jpg" alt="">
+      <h3>Chocolate Cake</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam,</p>
+  
+      <h6>$100.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(2)">Buy Now</button>
+
+  </div>
+<!--  -->
+
+
+
+
+<!--  -->
+
+  <div class="content">
+      <img src="./cake/depositphotos_10048632-stock-photo-chocolate-cake.jpg" alt="">
+      <h3>Extra Chocolate Cake with Cramel</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$200.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1"  onclick="write_on_item_page(3)">Buy Now</button>
+
+  </div>
+
+
+
+
+
+
+  <div class="content">
+      <img src="./cake/depositphotos_67056547-stock-photo-cream-chocolate-cake-with-icing.jpg" alt="">
+      <h3>Chocolate Cake with Extra Cramel</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$150.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(4)">Buy Now</button>
+
+  </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="gallery">
+  <div class="content">
+      <img src="./bread/depositphotos_174069000-stock-photo-homemade-chocolate-chip-cookies.jpg" alt="">
+      <h3>Cookies</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$100.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(5)">Buy Now</button>
+  </div>
+
+
+  <div class="content">
+      <img src="./bread/depositphotos_18339921-stock-photo-baked-goods.jpg" alt="">
+      <h3>Delecious Bread</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam,</p>
+  
+      <h6>$50.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(6)">Buy Now</button>
+
+  </div>
+<!--  -->
+
+
+
+
+<!--  -->
+
+  <div class="content">
+      <img src="./bread/depositphotos_311021426-stock-photo-choco-pie-chocolate-sweets.jpg" alt="">
+      <h3>Chocolate Biscuits</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$80.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(7)">Buy Now</button>
+
+  </div>
+<!-- 
+  onclick="addToCart({id: 6,
+    image: './bread/depositphotos_311021426-stock-photo-choco-pie-chocolate-sweets.jpg',
+    title: '250D DSLR Camera',
+    price: 230,})" -->
+
+
+
+
+  <div class="content">
+      <img src="./bread/depositphotos_194847802-stock-photo-close-shot-delicious-chocolate-cookies.jpg" alt="">
+      <h3>Biscuits</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$60.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(8)">Buy Now</button>
+
+  </div>
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<div class="gallery">
+  <div class="content">
+      <img src="./cupcake/depositphotos_68316949-stock-photo-three-cupcakes-with-sparklers.jpg" alt="">
+      <h3>Vanilla cupcake</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$60.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(9)">Buy Now</button>
+  </div>
+
+
+  <div class="content">
+      <img src="./cupcake/depositphotos_32764241-stock-photo-chocolate-cupcake-on-dark-background.jpg" alt="">
+      <h3>Extra Chocolate  Cupcake</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam,</p>
+  
+      <h6>$80.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(10)">Buy Now</button>
+
+  </div>
+<!--  -->
+
+
+
+
+<!--  -->
+
+  <div class="content">
+      <img src="./cupcake/Chocolate-and-Vanilla-Cupcakes-11-scaled.jpg" alt="">
+      <h3>Chocolate Cupcake</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$70.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(11)">Buy Now</button>
+
+  </div>
+
+
+
+
+
+
+  <div class="content">
+      <img src="./cupcake/depositphotos_89817692-stock-photo-tasty-cupcakes-isolated-on-white.jpg" alt="">
+      <h3>Strawbery Cupcake</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quam veritatis sequi aliquam facilis ullam, </p>
+  
+      <h6>$80.00</h6>
+      <ul>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+          <l><i class="fa fa-star checked"></i></l>
+
+      </ul>
+      <button class="buy-1" onclick="write_on_item_page(12)">Buy Now</button>
+
+  </div>
+
+
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<div class="return_top">
+  <button class="wewe"><a class="sasasa" href="#eeee">top of main</a></button>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+    <!-- custom css file link -->
+    <script  src="main.js"></script>
+</body>
+</html>

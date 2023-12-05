@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reg.css">
+
+    <style>
+       
+      
+      </style>
+    <title>Register</title>
+</head>
+<body>
+    <form class="form" action="index.html">
+        <fieldset class="outerborder">
+            <legend class="title_border">
+                <strong>LOG IN</strong>
+            </legend>
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required pattern="^[a-zA-Z ]{3,}$" >
+                <span class="error">Name must be at least 3 letters.</span>
+
+            
+            </div>
+            <div>
+               
+                <label for="email"> Email :</label>
+                <input type="email" id="email" name="email" required 
+                pattern="^(?=.*[a-zA-Z0-9._%+-])(?=.*@)(?=.*gmail|outlook)[a-zA-Z0-9._%+-]+@(?:gmail|outlook)\.[a-zA-Z]{2,}$"
+               />
+                <span class="error">enter google or outlook.</span>
+
+            </div>
+           
+            <div>
+                <label for="Password">Password</label>
+                <input id="Password" type="Password" required pattern="^(?=.*[a-zA-Z])(?=.*\d).{8,}$"
+                 />
+            </div>
+            
+            
+            
+           <div>
+                <label for="ph_num">phone num</label>
+                <input id="ph_num" type="phone" required pattern="^(011|012|015|010)[0-9]{8}$" title="enter positive number"/>
+            </div>
+            
+           
+    
+
+<div>
+    
+
+    <input type="submit" value="Submit" class="sub">
+</div>
+<div class="ret">
+    <a href="index.html">
+<img src="./left-arrows.png" alt="" />
+</a>
+</div>
+</fieldset>
+    </form>
+    
+</body>
+</html>
